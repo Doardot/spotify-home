@@ -14,7 +14,7 @@ body {
 .sidebar__navigation {
     background-color: #121212;
     border-radius: 8px;
-    padding: 16px 0 0 16px;
+    cursor: pointer;
 }
 
 .sidebar__navigation .logo {
@@ -34,7 +34,7 @@ body {
 }
 
 .sidebar ul li {
-    padding: 10px 0;
+    padding: 10px 0px;
 }
 
 .sidebar nav ul li a {
@@ -43,6 +43,12 @@ body {
     font-weight: 600;
     font-size: 14px;
     font-family: "DM Sans", sans-serif;
+}
+
+.sidebar nav ul li .fa {
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 300;
 }
 
 .library {
@@ -89,7 +95,8 @@ body {
     margin: 24px 10px;
 }
 
-.section-playlist {
+.section-playlist,
+.section-podcast {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -103,22 +110,26 @@ body {
     border-radius: 10px;
 }
 
-.section-playlist .section-playlist__content {
+.section-playlist .section-playlist__content,
+.section-podcast .section-podcast__content {
     display: flex;
     flex-direction: column;
 }
 
-.section-playlist__content .text{
+.section-playlist__content .text,
+.section-podcast__content .text {
     padding-bottom:14px;
     color:#FFF;
     font-family: "DM Sans", sans-serif;
 }
 
-.section-playlist__content .title{
+.section-playlist__content .title,
+.section-podcast__content .title {
     font-weight: 700;
 }
 
-.section-playlist__content .subtitle{
+.section-playlist__content .subtitle, 
+.section-podcast__content .subtitle {
     font-weight: 500;
     font-size: 12px;
 }
@@ -135,9 +146,24 @@ body {
     text-decoration: none;
     text-transform: none;
     padding: 10px;
-    margin-top: 12px;
     border: 0px;
     width: 113px;
+}
+
+.section-podcast__content .section-podcast__button {
+    display: flex;
+    justify-content: flex;
+    background-color: #fff;
+    color: #000000;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+    text-decoration: none;
+    text-transform: none;
+    padding: 10px;
+    border: 0px;
+    width: 121px;
 }
 
 .sidebar .cookies {
