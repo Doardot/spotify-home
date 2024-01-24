@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
-    <link rel="stylesheet" href="src/styles/reset.css">
-    <link rel="stylesheet" href="src/styles/styles.css">
-    <link rel="stylesheet" href="src/styles/sidebar-library.css">
+    <link rel="shortcut icon" href="./src/assets/icons/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/vars.css">
+    <link rel="stylesheet" href="./src/styles/main-content.css">
+    <link rel="stylesheet" href="./src/styles/sidebar-footer.css">
     <link 
         rel="stylesheet" 
         href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
@@ -86,6 +88,33 @@
             </div>
         </div>
     </div>
+
+    <main>
+        <div class="main-container">
+            <nav class="header__navigation">
+                <div class="navigation">
+                    <button class="arrow-left">
+                        <img src="./src/assets/icons/small-left.png" alt="Arrow left">
+                    </button>
+                    <button class="arrow-right">
+                        <img src="./src/assets/icons/small-right.png" alt="Arrow right">
+                    </button>
+
+                    <div class="header__search">
+                        <img src="./src/assets/icons/search.png" alt="">
+                        <input id="search-input" type="text" 
+                        maxlength="800" placeholder="What do you want to listen to?">
+                    </div>
+                </div>
+
+                <div class="header__login">
+                    <button class="subscribe">Subscribe</button>
+                    <button class="login">Login</button>
+                </div>
+            </nav>
+        </div>
+    </main>
+
     <footer class="preview-premium">
         <div class="preview-premium__content">
             <p class="text title">Preview of Spotify</p>
