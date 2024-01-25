@@ -91,3 +91,141 @@
     font-weight: 700;
     border-radius: 40px;
 }
+
+/* PLAYLISTS */
+.playlist-container {
+    height: 68vh;
+    padding-top: 16px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #121212;
+}
+
+.playlist {
+    margin: 24px;
+}
+
+.playlist #greeting {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+  
+.playlist #session {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500px;
+}
+
+/* SCROLLBAR-PLAYLIST */
+
+.offer__scroll-container {
+    max-height: 43vh;
+    margin: 24px;
+    overflow-y: auto;
+}
+
+/* */
+
+.offer__list-item {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 16px;
+    gap: 16px;
+    margin-bottom: 16px;
+    display: grid;
+    gap: 16px;
+    grid-gap: 32px;
+    margin: 0 auto;
+}
+
+.offer__list-item img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: 107px;
+    transform: rotate(25deg) translate(18%, -2%);
+}
+
+/* CARDS */
+
+.cards {
+    position: relative; 
+    width: 220px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.cards span {
+    padding: 16px;
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* COLOR CARDS */
+.card1 {
+    background-color: rgb(230, 30, 50); /* Christmas */
+}
+
+.card2 {
+    background-color: rgb(30, 50, 100); /* Made for you */
+}
+
+.card3 {
+    background: rgb(232, 17, 91); /* New releases */
+}
+
+.card4 {
+    background: rgb(140, 25, 50); /* Brazilian Creators */
+}
+
+.card5 {
+    background: rgb(119, 119, 119); /* Workout */
+}
+
+.card6 {
+    background: rgb(0, 100, 80); /* Podcasts */
+}
+
+.card7 {
+    background: rgb(83, 122, 161); /* Sertanejo */
+}
+
+.card8 {
+    background: rgb(0, 100, 80); /* Samba & pagode */
+}
+
+.card9 {
+    background: rgb(230, 30, 50); /* Brazilian funk */
+}
+
+.card10 {
+    background: rgb(160, 195, 210); /* MPB */
+}
+
+.card11 {
+    background: rgb(233, 20, 41); /* Rock */
+}
+
+.card12 {
+    background: rgb(80, 55, 80); /* Hip hop */
+}
+
+.card13 {
+    background: rgb(233, 20, 41); /* Indie */
+}
+
+.card14 {
+    background: rgb(0, 30, 80); /* Relax */
+}
+
+.card15 {
+    background: rgb(225, 17, 140); /* Latin */
+}
+/* */
