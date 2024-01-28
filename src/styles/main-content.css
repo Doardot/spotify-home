@@ -1,10 +1,14 @@
+.body {
+    overflow: hidden;
+}
+
 /* HEADER */
 
 .main-container {
+    padding-top: 2px;
+    margin-left: 312px;
     max-width: 80vw;
     height: 100vh;
-    margin-left: 320px;
-    margin-right: 56px;
 }
 
 .header__navigation {
@@ -15,6 +19,8 @@
     margin: 10px;
     border-radius: 8px;
     background-color: #121212;
+    position: relative;
+    z-index: 1;
 }
 
 .header__navigation .navigation {
@@ -39,6 +45,7 @@
     border-radius: 50%;
     border: none;
     cursor: pointer;
+    opacity: 0.8;
 }
 
 .header__login {
@@ -75,12 +82,21 @@
     width: 190px;
 }
 
+.header__search:hover {
+    border: 1px solid #fff;
+}
+
 .header__login .signup {
     color: #a7a7a7;
     font-size: 16px;
     font-weight: 700;
     background-color: transparent;
     margin-right: 32px;
+}
+
+.header__login .signup:hover {
+    transform: scale(1.04);
+    color: #fff;
 }
 
 .header__login .login {
@@ -92,8 +108,15 @@
     border-radius: 40px;
 }
 
+.header__login .login:hover {
+    transform: scale(1.04);
+}
+
 /* PLAYLISTS */
+
 .playlist-container {
+    display: flex;
+    flex-direction: column;
     height: 68vh;
     padding-top: 16px;
     margin: 10px;
@@ -126,6 +149,14 @@
     overflow-y: auto;
 }
 
+.offer__scroll-container::-webkit-scrollbar {
+    width: 1px;
+}
+
+.offer__scroll-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
 /* */
 
 .offer__list-item {
@@ -154,7 +185,7 @@
 
 .cards {
     position: relative;
-    width: 220px;
+    width: 200px;
     height: 200px;
     overflow: hidden;
     border-radius: 8px;
@@ -168,7 +199,81 @@
     font-weight: 700;
 }
 
+/* CARDS HOVER */
+
+.cards [class^="card"]:hover span,
+.cards [class^="card"]:hover img {
+    display: none;
+}
+
+.cards [class^="card"]:hover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cards .card1:hover {
+    background-image: url(../assets/playlist/1.jpeg);
+}
+
+.cards .card2:hover {
+    background-image: url(../assets/playlist/2.png);
+}
+
+.cards .card3:hover {
+    background-image: url(../assets/playlist/3.jpeg);
+}
+
+.cards .card4:hover {
+    background-image: url(../assets/playlist/4.jpeg);
+}
+
+.cards .card5:hover {
+    background-image: url(../assets/playlist/5.jpeg);
+}
+
+.cards .card6:hover {
+    background-image: url(../assets/playlist/6.jpeg);
+}
+
+.cards .card7:hover {
+    background-image: url(../assets/playlist/7.jpeg);
+}
+
+.cards .card8:hover {
+    background-image: url(../assets/playlist/8.jpeg);
+}
+
+.cards .card9:hover {
+    background-image: url(../assets/playlist/9.jpeg);
+}
+
+.cards .card10:hover {
+    background-image: url(../assets/playlist/10.jpeg);
+}
+
+.cards .card11:hover {
+    background-image: url(../assets/playlist/11.jpeg);
+}
+
+.cards .card12:hover {
+    background-image: url(../assets/playlist/12.jpeg);
+}
+
+.cards .card13:hover {
+    background-image: url(../assets/playlist/13.jpeg);
+}
+
+.cards .card14:hover {
+    background-image: url(../assets/playlist/14.jpeg);
+}
+
+.cards .card15:hover {
+    background-image: url(../assets/playlist/15.jpeg);
+}
+
 /* COLOR CARDS */
+
 .card1 {
     background-color: rgb(230, 30, 50);
     /* Christmas */
