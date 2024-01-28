@@ -1,5 +1,80 @@
 @media screen and (max-width: 1015px) {
+
+    .main-container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+
+    .header__navigation {
+        display: flex;
+        align-items: center;
+        contain: content;
+        gap: 8px;
+        height: 64px;
+        justify-content: space-between;
+        padding: 16px;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .header__navigation .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .header__navigation .navigation .arrow-left {
+        margin-right: 0.25rem;
+        position: relative;
+        display: flex;
+        z-index: 1;
+    }
+
+    .header__navigation .navigation .arrow-right {
+        margin-left: 0.25rem;
+        position: relative;
+        display: flex;
+        z-index: 1;
+    }
+
+    .header__login .subscribe {
+        font-size: 12px !important;
+        padding: 10px !important;
+        margin-right: 5px !important;
+    }
+
+    .header__login .login {
+        font-size: 12px !important;
+        padding: 10px !important;
+    }
+
     .offer__list-item {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .playlist-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .playlist {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .playlist #greeting {
+        display: flex;
+        padding-top: 100px;
+    }
+
+    .playlist #session {
+        display: flex;
+        margin: 0;
     }
 }
