@@ -1,9 +1,23 @@
-@media screen and (max-width: 1015px) {
+@media screen and (max-width: 500px) {
 
     .main-container {
-        display: grid;
-        grid-template-columns: 3fr 1fr;
+        padding-top: 2px;
+        margin-left: 0;
+        max-width: 100vw;
+        height: max-content;
+        width: max-content;
+        display: column;
     }
+
+    .sidebar {
+        display: none;
+    }
+
+    .preview-premium {
+        display: none;
+    }
+
+    /* HEADER */
 
     .header__navigation {
         display: flex;
@@ -12,17 +26,35 @@
         gap: 8px;
         height: 64px;
         justify-content: space-between;
-        padding: 16px;
-        position: absolute;
+        padding: 16px, 13px, 16px, 13px;
+        position: relative;
         width: 100%;
         z-index: 1;
+    }
+
+    .header__search {
+        display: flex;
+        align-items: center;
+        width: 200px;
+        height: 48px;
+        margin-left: 8px;
+        background-color: #242424;
+        border-radius: 500px;
+        border: 1px solid transparent;
+    }
+
+    .header__login .signup {
+        display: none;
+    }
+
+    .header__login .login {
+        padding: 10px;
     }
 
     .header__navigation .navigation {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100%;
     }
 
     .header__navigation .navigation .arrow-left {
@@ -39,26 +71,41 @@
         z-index: 1;
     }
 
-    .header__login .subscribe {
-        font-size: 12px !important;
-        padding: 10px !important;
-        margin-right: 5px !important;
-    }
+    /* MAIN CONTENT */
 
-    .header__login .login {
-        font-size: 12px !important;
-        padding: 10px !important;
+    .cards {
+        width: 180px;
+        height: 180px;
     }
 
     .offer__list-item {
         grid-template-columns: 1fr 1fr !important;
     }
 
+    /* SCROLLBAR-PLAYLIST */
+
+    .offer__scroll-container {
+        max-height: 76vh;
+        margin: 24px;
+        overflow-y: auto;
+    }
+
+    /* PLAYLIST */
+
     .playlist-container {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        height: 92vh;
+        width: 106vw;
+        padding: 10px, 4px, 10px, 4px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    .result-playlist {
+        display: flex;
+        flex-direction: column;
         padding: 0;
     }
 
@@ -68,13 +115,8 @@
         padding: 0;
     }
 
-    .playlist #greeting {
-        display: flex;
-        padding-top: 100px;
-    }
-
+    .playlist #greeting,
     .playlist #session {
         display: flex;
-        margin: 0;
     }
 }
